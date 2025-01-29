@@ -8,10 +8,10 @@ import {auth} from '../firebase-config';
 {String} email
 {String} password
 
-export const loginWithEmailPassword=async(email,password)=>
+export const loginWithEmailPass=async(email,password)=>
 {
     try{
-        await signInWithEmailAndPassword(auth,email,password); 
+        await signInWithEmailAndPass(auth,email,password); 
     } catch (error) {
         Alert.alert("Error", error.message);
     }
