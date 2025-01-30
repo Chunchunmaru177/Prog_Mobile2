@@ -3,10 +3,11 @@ import {signInWithEmailAndPassword} from 'firebase/auth';
 import { Alert } from 'react-native';
 import {auth} from '../firebase-config';
 
-/*Función de Iniciar Sesión */
-
-{String} email
-{String} password
+/**
+ * Función para iniciar sesión
+ * @param {string} email
+ * @param {string} password
+ */
 
 export const loginWithEmailPass=async(email,password)=>
 {
